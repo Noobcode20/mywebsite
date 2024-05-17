@@ -1,0 +1,263 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+.logo{
+  font-family: 'Agdasima', serif;
+  padding-top: 5px;
+  font-size: 30px;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+nav {
+  font-size: 18px;
+  background: #333;
+  color: #fff;
+  display:flex;
+  justify-content: space-between;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  right: 10;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  padding: 0 10px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.burger {
+  padding-top: 3px;
+  display: none;
+  cursor: pointer;
+  font-size: 24px;
+  color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .burger {
+    display: block;
+  }
+  
+  .nav-active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 55px;
+    left: 0;
+    width: 100%;
+    background: #333;
+    padding: 20px;
+    overflow: hidden;
+  }
+
+  .nav-active li {
+    text-align: left;
+    padding: 10px;
+  }
+
+  #home .overlay {
+    display: block;
+    box-shadow: 5px 5px 10px whitesmoke;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    width:60vw;
+  }
+  
+
+  #projects {
+    padding: 0 20px;
+  }
+
+  #projects ul {
+    justify-content: flex-start;
+  }
+
+  #projects li {
+    flex: 0 0 calc(50% - 20px);
+    margin-bottom: 20px;
+  }
+}
+
+.logo a{
+  color: white;
+  font-family: 'Agdasima', serif;
+  padding-top: 5px;
+  font-size: 30px;
+  text-decoration: none;
+}
+
+section {
+  padding: 60px 20px;
+  text-align: center;
+  margin-top: 80px; /* Account for the fixed header */
+}
+
+#home {
+  align-items: center;
+  background-image: url("parradox.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#home .overlay {
+  display: block;
+  box-shadow: 5px 5px 10px whitesmoke;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  border-radius: 10px;
+  width:50vw;
+}
+
+#about {
+  box-shadow: 5px 5px 8px grey;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  border-radius: 10px;
+  margin-top: -50px;
+  background-color: #f2f2f2;
+}
+
+.scroll-container::-webkit-scrollbar {
+  display: none;
+}
+
+.container {
+  max-width: 960px; /* Adjust the maximum width as per your preference */
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.scroll-container {
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  cursor: grab;
+  cursor: -webkit-grab;
+}
+
+.scroll-container:active {
+  cursor: grabbing;
+  cursor: -webkit-grabbing;
+}
+
+.scroll-content {
+  display: inline-flex;
+  gap: 20px;
+}
+
+#projects {
+  background-color: #eaeaea;
+  overflow: hidden;
+}
+
+#projects ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+#projects li {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  flex: 0 0 200px;
+}
+
+#contact {
+  background-color: #f7f7f7;
+  padding: 50px 0;
+}
+
+#contact h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.contact-form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background-color: #333;
+  color: #fff;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #555;
+}

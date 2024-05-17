@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Udbhav Padala</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Agdasima">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">    
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+TC:wght@300&family=Ysabeau+Infant:ital,wght@1,300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Ysabeau+Infant:ital,wght@1,200&display=swap" rel="stylesheet">
+  <script src="script.js" defer></script>
+</head>
+<style>
+  * {
+    cursor:none;
+    overflow-x: hidden;
+  }
+  body {
+    background: #121212; 
+    margin: 0;
+  }
+  
+  .nav-link {
+    font-size: 30px;
+    color: grey;
+  }
+  
+  .nav-link:hover {
+    color: white;
+  }
+  
+  .navbar-nav {
+    margin: 0 auto;
+  }
+  
+  .nav-item {
+    margin: 0 10px;
+  }
+  
+  @media only screen and (min-width: 990px) {
+    
+      .trail-circle {
+        position: absolute;
+        z-index: 9998;
+        width: 40px;
+        height: 40px;
+        background: radial-gradient(circle at 50% 50%, transparent 60%, #000 70%);
+        border: 1px solid #fff;
+        border-radius: 50%;
+        pointer-events: none;
+        transition: width 0.3s ease, height 0.3s ease, opacity 0.3s ease;
+        opacity: 0;
+      }
+      .nav-link {
+        font-size: 30px;
+        color: white;
+      }
+      header {
+        width: 95%;
+        margin-left: 2.5%;
+      }
+    }
+
+  @media only screen and (max-width: 990px) {
+    header {
+      right: 5%;
+    }
+  }
+
+</style>
+<body>
+    <header style="opacity: 50%; font-family: Rancho, cursive; position: fixed; border: 0.5px solid white; box-shadow: 0px 5px 20px rgb(87, 87, 87); border-radius: 30px; margin-top: 20px; padding: 0px; background-color: black; z-index: 9995;">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <button id="toggleButton" class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="container">
+          <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link clickable-item" href="#Home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link clickable-item" href="#aboutme">About Me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link clickable-item" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="custom-cursor"></div>
+    </div>
+  </header>
+    <div style="background-color: black; line-height: 30px; height: 100%; min-height: 100vh; padding-top: 50vh;">
+      <div style="height: 100%; position: relative; left:10%;">
+          <div style="z-index: 2; text-align: left; height: 100%; position: relative; align-items: left; justify-content: left;">
+              <p style="font-family: DM Serif Display, serif; font-size: 20px; color: rgb(157, 238, 64);">Hello! My name is</p> 
+              <h1 style="font-size: 13vh; font-family: Montserrat, sans-serif; font-weight: 700; color: rgb(59, 16, 185);">Udbhav</h1>
+              <div id="typing-container">
+                  <h2 style="color:grey; font-size: 5vh;">I am a <span id="typing-text" style="font-family: Satisfy, cursive;"></span></h2>
+              </div>
+          </div>  
+      </div>          
+  </div>
+  <img id="map-part" src="static/me.png" class= "bg-me" style="height: 95%; z-index: 1; position: absolute; top: 5%; right: 0; opacity: 65%;"> <!-- Set a lower z-index for the image -->
+  <div style="background-color: #333; padding: 50px; color: #fff; text-align: left; font-family: 'Roboto', Arial, sans-serif; line-height: 1.6; border-radius: 10px; box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);">
+      <div class="container" style="background-color: rgb(30, 30, 30); border-radius: 10px; padding: 20px;">
+          <h1 style="font-family: 'DM Serif Display'; font-size: 2.8em; color: #fff; margin-bottom: 30px;">Welcome to My Professional Portfolio!</h1>
+          <p style="font-size: 1.2em;">Greetings! I'm a 16-year-old aspiring programmer with a passion for crafting innovative solutions through code. Despite my age, I've immersed myself in the world of programming, finding both challenge and excitement in the art of coding.</p>
+          <p style="font-size: 1.2em;">Currently navigating the early stages of my academic journey, I'm actively seeking internship opportunities that align with my programming passion. I firmly believe that gaining hands-on experience now will shape my trajectory and set the stage for future endeavors.</p>    
+          <p style="font-size: 1.2em;">Explore a curated collection of my projects, each showcasing my evolving skills and commitment to the craft. From tackling coding challenges to working on personal projects, I've cultivated a diverse skill set that adapts to the dynamic tech landscape.</p>
+          <p style="font-size: 1.2em;">Feel fjgee to peruse my skill set, delve into my projects, and join me in this continuous learning experience. Beyond the quest for an internship, I'm eager to collaborate with fellow students and professionals who share my fervor for the limitless possibilities within the realm of programming.</p>   
+          <p style="font-size: 1.2em;">Thank you for visiting and taking a glimpse into my digital journey. I'm enthusiastic about connecting, exchanging ideas, and embarking on the next phase of my programming adventure.</p>
+          <button class="clickable-item lmbtn" style="cursor: pointer; padding: 15px 30px; font-size: 1.2em; border: none; border-radius: 8px;">Learn More</button>
+      </div>
+  </div>
+  <section id="about">
+  </section>
+  <section id="projects">
+  </section>
+  <section id="contact">
+  </section>
+</body>
+</html>
